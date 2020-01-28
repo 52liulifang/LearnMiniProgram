@@ -33,7 +33,18 @@ App({
       }
     })
   },
+  
   globalData: {
-    userInfo: null
+    name:'coderwhy',
+    age:19
+  },
+  onShow:function(options){
+    wx.getUserInfo({
+      success: function (res) {
+        console.log(res)
+      }
+    })
   }
+  
+
 })
