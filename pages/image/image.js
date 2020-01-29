@@ -1,18 +1,13 @@
-// pages/home/home.js
+// pages/image/image.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    
-counter:0
+imagePath:''
   },
-handleIncrement(){
-this.setData({
-  counter:this.data.counter+1
-})
-},
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -68,7 +63,18 @@ this.setData({
   onShareAppMessage: function () {
 
   },
-  handleTabClick(event){
-    console.log(event)
+  handleChooseAlbum(){
+    wx.chooseImage({
+      success:(res)=>{
+//console.log(log)
+     const path=res.tempFilePaths[0]
+      this.setData({
+          imagePath:path
+           })
+      },
+    })
+  },
+  handleImageLoad(){
+    console.log('开始加载')
   }
 })

@@ -1,18 +1,13 @@
-// pages/home/home.js
+// pages/text/text.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    
-counter:0
+
   },
-handleIncrement(){
-this.setData({
-  counter:this.data.counter+1
-})
-},
+
   /**
    * 生命周期函数--监听页面加载
    */
@@ -67,8 +62,5 @@ this.setData({
    */
   onShareAppMessage: function () {
 
-  },
-  handleTabClick(event){
-    console.log(event)
   }
 })

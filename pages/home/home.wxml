@@ -1,4 +1,12 @@
 <!--pages/home/home.wxml-->
 <text class="title">helloworld</text>
 <button size='mini'>按钮</button>
-
+<my-cpn></my-cpn>
+<!--给自定义组件传数据-->
+<myprop title="刘丽芳" titleclass="red"/>
+<myprop title="潘雯雯" titleclass="green"/>
+<myprop titleclass="yellow"/>
+<!--组件内部发出事件-->
+<view>当前计数：{{counter}}</view>
+<event bind:incement="handleIncrement"/>
+<tab-control titles="{{['衣服','裤子','鞋子','阴环','乳钉']}}" bind:itemclick="handleTabClick"/>

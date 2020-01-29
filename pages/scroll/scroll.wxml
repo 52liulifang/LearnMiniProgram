@@ -1,0 +1,5 @@
+<!--pages/scroll/scroll.wxml-->
+<scroll-view class="container1" scroll-x>
+<view wx:for="{{10}}" class="item1">{{item}}</view>
+</scroll-view>
+<view>{{nowTime}}</view>

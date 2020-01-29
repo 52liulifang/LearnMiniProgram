@@ -1,0 +1,4 @@
+<!--pages/button/button.wxml-->
+<button>pages</button>
+<button size="mini" loading="{{isLoading}}">page</button>
+<button hover-class="pressed">bitches</button>

@@ -1,0 +1,4 @@
+<!--components/my-cpn/my-cpn.wxml-->
+<text class="title">components</text>
+<text class="content">内容</text>
+<cpn1/>

@@ -1,0 +1,3 @@
+<!--pages/input/input.wxml-->
+<input placeholder="请输入内容"></input>
+<input bindinput="handleInput" bindfocus="handleFocus" bindblur="handleBlur"></input>

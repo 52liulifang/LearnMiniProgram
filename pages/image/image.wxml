@@ -1,0 +1,4 @@
+<!--pages/image/image.wxml-->
+<button bindtap="handleChooseAlbum">选择图片</button>
+<image src="{{imagePath}}"/>
+<image wx:for="{{10}}" src="{{imagePath}}" bindload="handleImageLoad" lazy-load="{{true}}"/>
